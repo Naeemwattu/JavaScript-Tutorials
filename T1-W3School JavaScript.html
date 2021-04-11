@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3School JavaScript</title>
+</head>
+
+<body>
+    <div id="demo1"></div>
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = Date()'>Click Me Show Date and
+        Time</button>
+
+
+
+    <div id="demo"></div>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click Me to Display Date And
+        time</button>
+
+    <h1>JavaScript change to HTML content</h1>
+    <div id="demo2">JavaScript change to HTML content</div>
+    <button type="button" onclick="document.getElementById('demo2').innerHTML = 'Hello World'">Click ME</button>
+
+    <h1>JavaScript can change the style of an HTML Element</h1>
+    <div id="demo3">JavaScript can change the style of an HTML Element</div>
+    <button type="button" onclick="document.getElementById('demo3').style.fontSize = '30px'">Click me show 30px
+        FontSize</button>
+
+    <h1>JavaScript can hide the HTML Element</h1>
+
+    <div id="demo4">
+        <p>JavaScript can hide the HTML Element</p>
+    </div>
+    <button type="button" onclick="document.getElementById('demo4').style.display = 'none'">Click ME to Hide the HTML
+        element</button>
+
+    <h1>JavaScript can show hidden HTML elements.</h1>
+
+    <div id="demo5" style="display: none;">
+        <p>Hello JavaScript</p>
+    </div>
+    <button type="button" onclick="document.getElementById('demo5').style.display = 'block'">Click ME to show the Hidden
+        HTML element</button>
+
+
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script>
+
+</body>
+
+</html>
