@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+    <script>
+        var string = "My Name is Muhammad Naeem Abbas."
+        console.log(string);
+
+        // var position = string.indexOf("is")
+        // console.log(position);
+
+        var position = string.lastIndexOf("is")
+        console.log(position);
+
+        var sbstring = string.slice(1,7)
+        console.log(sbstring);
+
+        var sbstring = string.substr(1,7)
+        console.log(sbstring);
+
+        var sbstring = string.substring(1,7)
+        console.log(sbstring);
+
+        var replace = string.replace('Muhammad Naeem Abbas','nomi wattu')
+        console.log(string);
+        console.log(replace);
+
+        console.log(string.toUpperCase());
+        console.log(string.toLowerCase());
+
+        var newstring = string.concat(' Nick Name is Nomi.')
+        console.log(newstring);
+
+
+        var startwithspace = "    I'm   graduate      in   BS-IT.      "
+        console.log(startwithspace);
+        console.log(startwithspace.trim());
+
+
+
+        console.log(string[11]);
+    </script>
+</body>
+</html>
