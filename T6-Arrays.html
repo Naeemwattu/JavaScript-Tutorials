@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T6-Arrays</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <p id="array"></p>
+    <script>
+        var frndz = ["nomi", " shezzi", " umer", " awais", " Malik", " Chacha"];
+        document.getElementById('array').innerHTML = frndz;
+    </script>
+
+
+    <h1>JavaScript| Using the JavaScript Keyword new</h1>
+    <p id="array1"></p>
+    <script>
+        var name = new Array("Nomi", " Sheraz", " Umer", " Awais", " Malik", " Nisar");
+        document.getElementById('array1').innerHTML = name;
+    </script>
+
+    <h1>Access the Elements of an Array</h1>
+    <p id="array2"></p>
+    <script>
+        var frndz = ["nomi", " shezzi", " umer", " awais", " Malik", " Chacha"];
+        document.getElementById('array2').innerHTML = frndz[3];
+    </script>
+
+
+
+
+    <h1>Changing an Array Element</h1>
+    <p id="array3"></p>
+    <script>
+        var frndz = [" shezzi", " umer", " awais", " Malik", " Chacha"];
+        frndz[0] = "Nomi";
+        document.getElementById('array3').innerHTML = frndz;
+    </script>
+
+
+    <h1>Arrays are Objects</h1>
+    <p id="array5"></p>
+    <script>
+        var info = {
+            firstname: "nomi",
+            secondname: "wattu",
+            age: 22,
+            dept: "BS-IT",
+            Smstr: '8th'
+        }
+        document.getElementById('array5').innerHTML = info['firstname'];
+    </script>
+
+    <h1>Length Property</h1>
+    <p id="array6"></p>
+    <script>
+        var info = {
+            firstname: "nomi",
+            secondname: "wattu",
+            age: 22,
+            dept: "BS-IT",
+            Smstr: '8th'
+        }
+        infoL = info.length;
+        document.getElementById('array6').innerHTML = infoL;
+    </script>
+</body>
+
+</html>
