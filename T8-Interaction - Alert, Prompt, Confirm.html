@@ -7,7 +7,7 @@
     <title>Interaction - Alert, Prompt, Confirm</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         This is Page
     </div>
 
@@ -15,6 +15,10 @@
     <script>
         // Alert in in-browser message 
         alert("This is a Alert Message!!!!! Hi ok this.");
+
+        // Prompt message
+        let name = prompt("What is your name? ", "Enter Your Name")
+        document.getElementById('container').innerHTML = name;
     </script>
 </body>
 </html>
