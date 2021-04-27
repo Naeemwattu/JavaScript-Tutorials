@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T5-Scope, if-else condition, switch case</title>
 </head>
+<style>
+    #btn{
+        padding: 8px 15px;
+        background-color: cornflowerblue;
+        color: black;
+        border: 2px solid palevioletred;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
 
 <body>
     <h1>T5-Scope, if-else condition, switch case</h1>
@@ -31,8 +41,25 @@
 
     <h1>Switch Statement</h1>
     <p id="demo4"></p>
+    
+
+    <h1>This is a heading</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dicta enim iure accusamus voluptatibus in vel facilis quisquam minima dolorum pariatur explicabo placeat tempora exercitationem voluptatem neque eos expedita atque vero aspernatur saepe ab, consectetur quasi. Unde hic modi repellendus iure facere, voluptatum laboriosam praesentium quod explicabo rerum quibusdam, aperiam id. Ex perspiciatis nobis nemo at iure voluptatibus labore quo velit hic. Dolores necessitatibus veritatis facere. Consequatur reiciendis recusandae doloribus iure ipsam quasi sunt soluta voluptatem dolorem, molestiae exercitationem quam quo blanditiis nisi voluptate ullam tempore nesciunt accusamus dolorum dolor architecto veniam necessitatibus. Laborum quo ad blanditiis temporibus aperiam labore nulla ullam, numquam iure repellat officia odio facilis, pariatur excepturi ut! Quae repellendus quas vel cupiditate temporibus. Facere sint odio minus doloribus, harum quas repellat porro vero quidem, velit beatae temporibus autem aliquid quae! Inventore id expedita facilis ipsa sint, ratione enim animi quaerat obcaecati beatae corrupti est soluta tempore voluptatibus iste accusamus reiciendis dolorum. Dolores modi, illum error eum incidunt quam voluptatum quod debitis tempore eaque repellendus quo natus porro repudiandae soluta numquam nihil commodi magnam quidem expedita nostrum architecto vero. Minima explicabo reprehenderit est ipsum vitae necessitatibus corrupti omnis tenetur? Aspernatur dolore, ducimus corporis atque doloremque eius blanditiis.</p>
+    <button id="btn" onclick="ToggleHide()">Show/Hide</button>
+
 
     <script>
+
+        function ToggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
 
         // -------------------if-else statement--------------------
         let age = 15;
