@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 18px;
+        background-color: green;
+        color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This is a Heading</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis nisi animi cum inventore corporis harum qui vero excepturi voluptatem, non rem dolorem sequi maxime? Qui, fuga dolore cumque adipisci beatae, distinctio cum soluta minima odio nostrum cupiditate amet quidem provident. Velit deleniti, soluta totam temporibus eveniet quam architecto asperiores laborum quod deserunt, sunt, nesciunt unde. Maiores quia recusandae, possimus natus ducimus rem qui numquam ipsum molestias mollitia dolorum non doloremque, facilis voluptates odit similique iusto! Praesentium corrupti aliquam ab iste harum, consectetur quaerat, maiores aut saepe sunt repudiandae obcaecati perferendis, fugiat cupiditate optio! Quam enim repellat deserunt quas quae itaque expedita quibusdam inventore excepturi laboriosam commodi praesentium similique doloribus repudiandae illo nesciunt, voluptas incidunt quidem reprehenderit. Dignissimos, soluta. Fugit nihil atque consequatur dignissimos illum quia officia. Velit repellat eveniet neque ut, aliquam rerum consequuntur distinctio placeat debitis aperiam molestiae quia alias ad officiis mollitia possimus expedita cupiditate temporibus corrupti officia doloribus dolorum quam. Rem asperiores eaque at deserunt aperiam laudantium! Aspernatur beatae explicabo aut laborum, vero quia nihil molestias. Ut ipsam tempora et, consequatur, quis, quasi facere molestiae laudantium dolorem soluta ab quos nostrum! Alias, quidem in. Quis quam ad itaque, sint adipisci quia vel nihil quo quisquam nemo.
+        </p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        function togglehide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para')
+            if (para.style.display !="none") {
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
