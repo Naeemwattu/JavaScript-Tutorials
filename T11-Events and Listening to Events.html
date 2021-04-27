@@ -25,6 +25,16 @@
     </div>
     <button id="btn" onclick="togglehide()">Show/Hide</button>
     <script>
+        let btn = document.getElementById('btn');
+        para.addEventListner('mouseover', function run(){
+            alert('Mouse Inside')
+        });
+
+        ara.addEventListner('mouseout', function run(){
+            alert('Mouse outside')
+        });
+
+
         function togglehide(){
             let btn = document.getElementById('btn');
             let para = document.getElementById('para')
