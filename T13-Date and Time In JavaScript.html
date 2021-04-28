@@ -20,12 +20,22 @@
     #time {
         font-weight: bold;
     }
+
+    #DateTime{
+        font-weight: bolder;
+    }
 </style>
 
 <body>
     <div class="container">
         Current time is <span id="time"></span>
     </div>
+
+    <div class="container">
+        The Current date and Time is <span id="DateTime"></span>
+    </div>
+
+
     <script>
         console.log("This is date and time tutorial");
         let now = new Date();
@@ -53,14 +63,25 @@
         let hours = newDate.getHours();
         console.log("The hours is ", hours);
 
+        let day = newDate.getDay();
+        console.log("The day is", day);
+
         newDate.setDate(8);
         newDate.setMinutes(29);
         console.log(newDate)
+
         setInterval(updateTime, 1000);
 
         function updateTime() {
             time.innerHTML = new Date();
         }
+
+
+        function datandtime(){
+            DateTime.innerHTML = new Date();
+        }
+
+        setInterval(datandtime , 1000);
 
     </script>
 </body>
