@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container
+</div>
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" //#bhindiLoverSquad
+        } 
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr)
+
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj)
+
+        
+
+        let jsonarray = {
+            name: "Nomi",
+            age: "22",
+            degree: "BS-IT",
+            frnd: "Awais"
+        }
+
+        console.log(jsonarray);
+        let jsonarraystr = JSON.stringify(jsonarray);
+        console.log(jsonarraystr);
+
+        jsonarraystr = jsonarraystr.replace('Awais','Umer');
+        console.log(jsonarraystr);
+
+        newjson = JSON.parse(jsonarraystr);
+        console.log(newjson);
+
+
+    </script>
+</body>
+</html>
