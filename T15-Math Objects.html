@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <h1>This is math object tutorial</h1>
+        <p id="rnmbr"></p>
     </div>
     <script>
     // Printing the Math Object
@@ -66,6 +67,12 @@
     console.log("The random number is ", r50_60)
 
 
+
+    let R = Math.random();
+    let x = 1;
+    let y = 100;
+    let random = x +(y-x)*Math.random();
+    document.getElementById('rnmbr').innerHTML = "The Random number 1 to 100 B/W is : "+ random;
 
 
 
